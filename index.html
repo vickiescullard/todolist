@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list 2022 with local storage</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <main class="app">
+
+        <section class="greeting">
+            <h2 class="title">
+                What's up <input type="text" id="name" placeholder="name">
+            </h2>
+        </section>
+
+        <section class="create-todo">
+            <h3>Create to do item:</h3>
+            <form id="newTodoForm">
+                <h4>What's on your to do list today?</h4>
+                <input type="text" name="content" id="content" placeholder="e.g. make a cup of tea">
+                <h4>Pick a category</h4>
+                <div class="options">
+
+                    <label>
+                        <input type="radio" name="category" id="category1" value="important">
+                        <span class="bubble important"></span>
+                        <div>Important</div>
+                    </label>
+
+                    <label>
+                        <input type="radio" name="category" id="category2" value="completed">
+                        <span class="bubble completed"></span>
+                        <div>Completed</div>
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Add to list">
+            </form>
+        </section>
+
+        <section class="todo-list">
+            <h3>To do list</h3>
+            <div class="list" id="todoList">
+
+                <!-- <div class="todo-item done">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble important"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Make a cup of tea" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+                <div class="todo-item">
+                    <label>
+                        <input type="checkbox">
+                        <span class="bubble completed"></span>
+                    </label>
+                    <div class="todo-content">
+                        <input type="text" value="Sleep" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div> -->
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
